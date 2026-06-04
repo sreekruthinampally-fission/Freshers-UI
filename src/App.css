@@ -266,3 +266,121 @@ body {
   border-top: 1px solid #f3f4f6;
   background: #fafafa;
 }
+
+/* Theme toggle button */
+.theme-btn {
+  padding: 6px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  background: none;
+  font-size: 13px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.theme-btn:hover {
+  background: #f3f4f6;
+}
+
+/* ── Dark mode ── */
+.dark {
+  background: #111827;
+}
+
+.dark .card {
+  background: #1f2937;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dark .card-header h1 {
+  color: #f9fafb;
+}
+
+.dark .tabs {
+  background: #111827;
+}
+
+.dark .tab {
+  color: #9ca3af;
+}
+
+.dark .tab-active {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.dark .search {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark .search::placeholder {
+  color: #6b7280;
+}
+
+.dark .theme-btn {
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark .theme-btn:hover {
+  background: #374151;
+}
+
+.dark .table {
+  border-top-color: #374151;
+}
+
+.dark .table th {
+  background: #1f2937;
+  color: #6b7280;
+  border-bottom-color: #374151;
+}
+
+.dark .table td {
+  color: #d1d5db;
+  border-bottom-color: #374151;
+}
+
+.dark .table tr:hover td {
+  background: #374151;
+}
+
+.dark .td-key {
+  color: #6b7280;
+}
+
+.dark .card-footer {
+  background: #1f2937;
+  border-top-color: #374151;
+  color: #6b7280;
+}
+
+.dark .modal {
+  background: #1f2937;
+}
+
+.dark .modal h2 {
+  color: #f9fafb;
+}
+
+.dark .field label {
+  color: #d1d5db;
+}
+
+.dark .input {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark .btn-ghost {
+  background: #374151;
+  color: #d1d5db;
+}
+
+.dark .status-done {
+  background: #374151;
+  color: #9ca3af;
+}

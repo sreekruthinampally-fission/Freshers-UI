@@ -18,6 +18,15 @@ export default function App() {
   const [showModal, setShowModal] = useState(false)
   const [newTaskName, setNewTaskName] = useState('')
   const [newTaskStatus, setNewTaskStatus] = useState('Todo')
+  const [theme, setTheme] = useState('light')
+
+  function toggleTheme() {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
 
   function handleAddTask() {
     if (newTaskName === '') return
@@ -61,7 +70,7 @@ export default function App() {
   )
 
   return (
-    <div className="page">
+    <div className={theme === 'dark' ? 'page dark' : 'page'}>
       <div className="card">
 
         {/* Header */}
@@ -93,6 +102,9 @@ export default function App() {
               Done
             </button>
           </div>
+          <button className="theme-btn" onClick={toggleTheme}>
+            {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+          </button>
         </div>
 
         {/* Search and New Task button */}
